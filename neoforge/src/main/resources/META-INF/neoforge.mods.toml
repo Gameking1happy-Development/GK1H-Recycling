@@ -6,7 +6,7 @@ issueTrackerURL = "${mod_issue_url}" #optional
 modId = "${mod_id}" #mandatory
 version = "${version}" #mandatory
 displayName = "${mod_name}" #mandatory
-updateJSONURL = "https://github.com/Gameking1happy-Development/Example-Mod/updates.json" #optional (see https://docs.neoforged.net/docs/misc/updatechecker/)
+updateJSONURL = "https://github.com/Gameking1happy-Development/GK1H-Recycling/updates.json" #optional (see https://docs.neoforged.net/docs/misc/updatechecker/)
 displayURL = "${mod_source_url}" #optional (displayed in the mod UI)
 logoFile = "${mod_id}.png" #optional
 credits = "${credits}" #optional
@@ -52,6 +52,51 @@ side = "BOTH"
 ignore = false
 modrinth = "hYykXjDp"
 curseforge = "1005914"
+[[dependencies.${ mod_id }]]
+modId = "mr_copper_recycling"
+type = "optional"
+versionRange = "[${copper_recycling_version},)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.${ mod_id }]]
+modId = "mr_diamond_recycling"
+type = "optional"
+versionRange = "[${diamond_recycling_version},)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.${ mod_id }]]
+modId = "mr_better_goldrecycling"
+type = "optional"
+versionRange = "[${gold_recycling_version},)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.${ mod_id }]]
+modId = "mr_better_ironrecycling"
+type = "optional"
+versionRange = "[${iron_recycling_version},)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.${ mod_id }]]
+modId = "mr_leather_recycling"
+type = "optional"
+versionRange = "[${leather_recycling_version},)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.${ mod_id }]]
+modId = "mr_netherite_recycling"
+type = "optional"
+versionRange = "[${netherite_recycling_version},)"
+ordering = "AFTER"
+side = "BOTH"
+[mc-publish]
+dependencies=[
+    "mr_copper_recycling@>=${copper_recycling_version}(recommended){modrinth:fuupShGh}#(ignore:curseforge)",
+    "mr_diamond_recycling@>=${diamond_recycling_version}(recommended){modrinth:jw67t8zN}#(ignore:curseforge)",
+    "mr_better_goldrecycling@>=${gold_recycling_version}(recommended){modrinth:1IZygUPY}#(ignore:curseforge)",
+    "mr_better_ironrecycling@>=${iron_recycling_version}(recommended){modrinth:ZzFVPwda}#(ignore:curseforge)",
+    "mr_leather_recycling@>=${leather_recycling_version}(recommended){modrinth:1PyD1P16}#(ignore:curseforge)",
+    "mr_netherite_recycling@>=${netherite_recycling_version}(recommended){modrinth:9nhO1kCg}#(ignore:curseforge)"
+    ]
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for example.

@@ -4,16 +4,16 @@
 plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev'
+    id 'org.sinytra.adapter.userdev' version '1.2.1-SNAPSHOT'
 }
 repositories {
     maven {
         url = "https://thedarkcolour.github.io/KotlinForForge/"
     }
-}
-dependencies {
-    api("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
-    accessTransformers("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
-    implementation("me.fzzyhmstrs:fzzy_config:${fzzy_config_version}+neoforge")
+    maven {
+        name = "Sinytra"
+        url = "https://maven.sinytra.org/"
+    }
 }
 neoForge {
     version = neoforge_version
@@ -32,17 +32,19 @@ neoForge {
             ideName = "NeoForge ${it.name.capitalize()} (${project.path})" // Unify the run config names with fabric
         }
         client {
+            gameDirectory = project.file('runs/client')
             client()
         }
         data {
             data()
-
+            gameDirectory = project.file('runs/data')
             // DataGen can be run by - "./gradlew :neoforge:runData" in Terminal.
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', rootProject.project('common').file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
 
         }
         server {
+            gameDirectory = project.file('runs/server')
             server()
         }
     }
@@ -51,4 +53,24 @@ neoForge {
             sourceSet sourceSets.main
         }
     }
+}
+dependencies {
+    api("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
+    accessTransformers("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
+    runtimeOnly("me.fzzyhmstrs:fzzy_config:${fzzy_config_version}+neoforge")
+    runtimeOnly("maven.modrinth:copper-recycling:${copper_recycling_version}+mod")
+    runtimeOnly("maven.modrinth:diamond-recycling:${diamond_recycling_version}+mod")
+    runtimeOnly("maven.modrinth:better-gold-recycling:${gold_recycling_version}+mod")
+    runtimeOnly("maven.modrinth:better-iron-recycling:${iron_recycling_version}+mod")
+    runtimeOnly("maven.modrinth:leather-recycling:${leather_recycling_version}+mod")
+    runtimeOnly("maven.modrinth:netherite-recycling:${netherite_recycling_version}+mod")
+    runtimeOnly("fuzs.puzzleslib:puzzleslib-neoforge:${puzzleslib_version}")
+    runtimeOnly("fuzs.iteminteractions:iteminteractions-neoforge:${iteminteractions_version}")
+    runtimeOnly("org.sinytra.forgified-fabric-api:forgified-fabric-api:${ffapi_version}")
+    runtimeOnly("maven.modrinth:connector-extras:${connector_extras_version}")
+    implementation("maven.modrinth:metal-bundles:v${metalbundles_version}-1.21.1-NeoForge")
+    implementation("maven.modrinth:enchanting-infuser:v${enchantinginfuser_version}-1.21.1-NeoForge")
+    runtimeOnly("maven.modrinth:netherite-extras:${netheriteextras_version}")
+    compileOnly(rootProject.project.files(".gradle/loom-cache/remapped_mods/remapped/maven/modrinth/netherite-extras-8f637a66").getAsFileTree())
+    additionalRuntimeClasspath("org.sinytra:connector:${connector_version}")
 }

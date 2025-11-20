@@ -95,7 +95,21 @@ processResources {
             'mod_issue_url'                : mod_issue_url,
             'fzzy_config_version'          : fzzy_config_version,
             'gk1hcore_version'             : gk1hcore_version,
-            'modmenu_version'              : modmenu_version
+            'modmenu_version'              : modmenu_version,
+            'copper_recycling_version'     : copper_recycling_version,
+            'diamond_recycling_version'    : diamond_recycling_version,
+            'gold_recycling_version'       : gold_recycling_version,
+            'iron_recycling_version'       : iron_recycling_version,
+            'leather_recycling_version'    : leather_recycling_version,
+            'netherite_recycling_version'  : netherite_recycling_version,
+            'puzzleslib_version'           : puzzleslib_version,
+            'iteminteractions_version'     : iteminteractions_version,
+            'connector_version'            : connector_version,
+            'ffapi_version'                : ffapi_version,
+            'connector_extras_version'     : connector_extras_version,
+            'metalbundles_version'         : metalbundles_version,
+            'enchantinginfuser_version'    : enchantinginfuser_version,
+            'netheriteextras_version'      : netheriteextras_version
     ]
 
     filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml', '*.mixins.json']) {

@@ -1,0 +1,27 @@
+{
+  "values": [
+    "minecraft:brush",
+    "minecraft:copper_bulb",
+    "minecraft:waxed_copper_bulb",
+    {
+      "id": "metalbundles:copper_bundle",
+      "required": false
+    },
+    {
+      "id": "illagerinvasion:imbuing_table",
+      "required": false
+    },
+    {
+      "id": "reinfchest:copper_chest",
+      "required": false
+    },
+    {
+      "id": "reinfbarrel:copper_barrel",
+      "required": false
+    },
+    {
+      "id": "#reinfshulker:copper_shulker_boxes",
+      "required": false
+    }
+  ]
+}

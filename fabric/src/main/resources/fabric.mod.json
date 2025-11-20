@@ -39,7 +39,13 @@
     "gk1hcore": ">=${gk1hcore_version}"
   },
   "recommends": {
-    "modmenu": ">=${modmenu_version}"
+    "modmenu": ">=${modmenu_version}",
+    "mr_copper_recycling": ">=${copper_recycling_version}",
+    "mr_diamond_recycling": ">=${diamond_recycling_version}",
+    "mr_better_goldrecycling": ">=${gold_recycling_version}",
+    "mr_better_ironrecycling": ">=${iron_recycling_version}",
+    "mr_leather_recycling": ">=${leather_recycling_version}",
+    "mr_netherite_recycling": ">=${netherite_recycling_version}"
   },
   "custom": {
     "modmenu": {
@@ -54,7 +60,13 @@
         "minecraft@${minecraft_version}#(ignore)",
         "java@>=${java_version}#(ignore)",
         "fzzy_config@>=${fzzy_config_version}(required){modrinth:hYykXjDp}{curseforge:1005914}",
-        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}{curseforge:1384685}"
+        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}{curseforge:1384685}",
+        "mr_copper_recycling@>=${copper_recycling_version}(recommended){modrinth:fuupShGh}#(ignore:curseforge)",
+        "mr_diamond_recycling@>=${diamond_recycling_version}(recommended){modrinth:jw67t8zN}#(ignore:curseforge)",
+        "mr_better_goldrecycling@>=${gold_recycling_version}(recommended){modrinth:1IZygUPY}#(ignore:curseforge)",
+        "mr_better_ironrecycling@>=${iron_recycling_version}(recommended){modrinth:ZzFVPwda}#(ignore:curseforge)",
+        "mr_leather_recycling@>=${leather_recycling_version}(recommended){modrinth:1PyD1P16}#(ignore:curseforge)",
+        "mr_netherite_recycling@>=${netherite_recycling_version}(recommended){modrinth:9nhO1kCg}#(ignore:curseforge)"
       ]
     }
   }
