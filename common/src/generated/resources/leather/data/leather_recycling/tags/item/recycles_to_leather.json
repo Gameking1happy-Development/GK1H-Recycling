@@ -1,0 +1,11 @@
+{
+  "remove": [
+    "minecraft:saddle"
+  ],
+  "values": [
+    {
+      "id": "bagofholding:leather_bag_of_holding",
+      "required": false
+    }
+  ]
+}

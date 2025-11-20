@@ -1,0 +1,43 @@
+{
+  "remove": [
+    "minecraft:compass"
+  ],
+  "values": [
+    "minecraft:soul_lantern",
+    "minecraft:iron_door",
+    "minecraft:smithing_table",
+    "minecraft:saddle",
+    {
+      "id": "moblassos:hostile_lasso",
+      "required": false
+    },
+    {
+      "id": "ytones:flat_lamp",
+      "required": false
+    },
+    {
+      "id": "hoppergadgetry:duct",
+      "required": false
+    },
+    {
+      "id": "bagofholding:iron_bag_of_holding",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:hose_nozzle",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:hose",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:magnet_upgrade",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:backpack_tank",
+      "required": false
+    }
+  ]
+}

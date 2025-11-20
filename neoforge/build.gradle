@@ -71,6 +71,7 @@ dependencies {
     implementation("maven.modrinth:metal-bundles:v${metalbundles_version}-1.21.1-NeoForge")
     implementation("maven.modrinth:enchanting-infuser:v${enchantinginfuser_version}-1.21.1-NeoForge")
     runtimeOnly("maven.modrinth:netherite-extras:${netheriteextras_version}")
+    runtimeOnly("io.wispforest:owo-lib-neoforge:${owo_version}")
     compileOnly(rootProject.project.files(".gradle/loom-cache/remapped_mods/remapped/maven/modrinth/netherite-extras-8f637a66").getAsFileTree())
     additionalRuntimeClasspath("org.sinytra:connector:${connector_version}")
 }

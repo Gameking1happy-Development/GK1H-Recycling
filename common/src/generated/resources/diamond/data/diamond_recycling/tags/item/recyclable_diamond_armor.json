@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "spikyspikes:diamond_spike",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:diamond_tier_upgrade",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:diamond",
+      "required": false
+    },
+    {
+      "id": "magnumtorch:diamond_magnum_torch",
+      "required": false
+    },
+    {
+      "id": "metalbundles:diamond_bundle",
+      "required": false
+    },
+    {
+      "id": "reinfbarrel:diamond_barrel",
+      "required": false
+    },
+    {
+      "id": "reinfchest:diamond_chest",
+      "required": false
+    },
+    {
+      "id": "#reinfshulker:diamond_shulker_boxes",
+      "required": false
+    }
+  ]
+}

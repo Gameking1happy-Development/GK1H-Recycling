@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "hangglider:glider_wing",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:blank_upgrade",
+      "required": false
+    }
+  ]
+}

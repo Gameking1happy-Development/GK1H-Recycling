@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "illagerinvasion:hallowed_gem",
+      "required": false
+    },
+    {
+      "id": "moblassos:diamond_lasso",
+      "required": false
+    },
+    {
+      "id": "arcanelanterns:lantern_maker",
+      "required": false
+    },
+    {
+      "id": "arcanelanterns:love_lantern",
+      "required": false
+    },
+    {
+      "id": "miniumstone:minium_stone",
+      "required": false
+    },
+    {
+      "id": "portalgun:portal_gun_claw",
+      "required": false
+    },
+    {
+      "id": "portalgun:portal_gun",
+      "required": false
+    }
+  ]
+}

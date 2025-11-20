@@ -1,0 +1,56 @@
+{
+  "remove": [
+    "minecraft:clock"
+  ],
+  "values": [
+    "minecraft:golden_carrot",
+    {
+      "id": "illagerinvasion:horn_of_sight",
+      "required": false
+    },
+    {
+      "id": "waystones:blank_scroll",
+      "required": false
+    },
+    {
+      "id": "waystones:warp_scroll",
+      "required": false
+    },
+    {
+      "id": "waystones:bound_scroll",
+      "required": false
+    },
+    {
+      "id": "waystones:return_scroll",
+      "required": false
+    },
+    {
+      "id": "moblassos:golden_lasso",
+      "required": false
+    },
+    {
+      "id": "horseexpert:monocle",
+      "required": false
+    },
+    {
+      "id": "arcanelanterns:feral_lantern",
+      "required": false
+    },
+    {
+      "id": "barteringstation:bartering_station",
+      "required": false
+    },
+    {
+      "id": "bagofholding:golden_bag_of_holding",
+      "required": false
+    },
+    {
+      "id": "magnumtorch:emerald_magnum_torch",
+      "required": false
+    },
+    {
+      "id": "magnumtorch:amethyst_magnum_torch",
+      "required": false
+    }
+  ]
+}

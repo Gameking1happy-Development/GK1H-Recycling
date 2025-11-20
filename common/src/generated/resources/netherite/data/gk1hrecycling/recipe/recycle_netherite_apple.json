@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "netherite_nugget",
+  "key": {
+    "a": {
+      "item": "netheriteextras:netherite_apple"
+    }
+  },
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netheriteextras:netherite_nugget"
+  }
+}

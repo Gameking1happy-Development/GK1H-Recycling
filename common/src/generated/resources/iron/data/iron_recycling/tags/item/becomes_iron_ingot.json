@@ -1,0 +1,57 @@
+{
+  "remove": [
+    "minecraft:smithing_table",
+    "minecraft:iron_door"
+  ],
+  "values": [
+    "minecraft:compass",
+    {
+      "id": "reinfchest:iron_chest",
+      "required": false
+    },
+    {
+      "id": "reinfbarrel:iron_barrel",
+      "required": false
+    },
+    {
+      "id": "metalbundles:iron_bundle",
+      "required": false
+    },
+    {
+      "id": "mutantmonsters:creeper_minion_tracker",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:iron_tier_upgrade",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:iron",
+      "required": false
+    },
+    {
+      "id": "hoppergadgetry:grated_hopper",
+      "required": false
+    },
+    {
+      "id": "hoppergadgetry:chute_minecart",
+      "required": false
+    },
+    {
+      "id": "hangglider:glider_framework",
+      "required": false
+    },
+    {
+      "id": "hangglider:hang_glider",
+      "required": false
+    },
+    {
+      "id": "hangglider:reinforced_hang_glider",
+      "required": false
+    },
+    {
+      "id": "#reinfshulker:iron_shulker_boxes",
+      "required": false
+    }
+  ]
+}

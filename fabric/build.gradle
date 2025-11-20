@@ -25,6 +25,7 @@ dependencies {
     modImplementation("maven.modrinth:metal-bundles:v${metalbundles_version}-1.21.1-Fabric")
     modImplementation("maven.modrinth:enchanting-infuser:v${enchantinginfuser_version}-1.21.1-Fabric")
     modImplementation("maven.modrinth:netherite-extras:${netheriteextras_version}")
+    modRuntimeOnly("io.wispforest:owo-lib:${owo_version}")
 }
 repositories {
     maven {

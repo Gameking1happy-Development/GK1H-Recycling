@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "spikyspikes:iron_spike",
+      "required": false
+    },
+    {
+      "id": "hoppergadgetry:grated_hopper_minecart",
+      "required": false
+    }
+  ]
+}

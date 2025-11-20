@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "recyclable_diamonds",
+  "key": {
+    "t": [
+      {
+        "item": "minecraft:enchanting_table"
+      },
+      {
+        "item": "enchantinginfuser:enchanting_infuser"
+      }
+    ]
+  },
+  "pattern": [
+    "t",
+    "t"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond"
+  }
+}

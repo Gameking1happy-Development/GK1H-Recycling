@@ -37,6 +37,6 @@ public class NetheriteRecipeProvider extends RecipeProvider {
                 .define('a', ModItems.NETHERITE_APPLE)
                 .unlockedBy("has_netherite_apple", has(ModItems.NETHERITE_APPLE))
                 .save(output,fNAP(MOD_ID,"recycle_netherite_apple"));
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.LODESTONE),RecipeCategory.MISC,Items.IRON_NUGGET,5).save(output,fNAP("netherite_recycling","recycle_lodestone_with_stonecutter"));
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.LODESTONE),RecipeCategory.MISC,Items.IRON_NUGGET,5).unlockedBy("has_lodestone", has(Items.LODESTONE)).save(output,fNAP("netherite_recycling","recycle_lodestone_with_stonecutter"));
     }
 }

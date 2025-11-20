@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "leather",
+  "key": {
+    "b": [
+      {
+        "item": "minecraft:bundle"
+      },
+      {
+        "item": "metalbundles:leather_bundle"
+      }
+    ]
+  },
+  "pattern": [
+    "bb",
+    "bb"
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:leather"
+  }
+}

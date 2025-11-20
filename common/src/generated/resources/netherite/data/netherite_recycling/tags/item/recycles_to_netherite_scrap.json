@@ -1,0 +1,60 @@
+{
+  "values": [
+    {
+      "id": "spikyspikes:netherite_spike",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:netherite_tier_upgrade",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:netherite",
+      "required": false
+    },
+    {
+      "id": "metalbundles:netherite_bundle",
+      "required": false
+    },
+    {
+      "id": "enchantinginfuser:advanced_enchanting_infuser",
+      "required": false
+    },
+    {
+      "id": "netheriteextras:netherite_wolf_armor",
+      "required": false
+    },
+    {
+      "id": "netheriteextras:totem_of_neverdying",
+      "required": false
+    },
+    {
+      "id": "netheriteextras:enchanted_netherite_apple",
+      "required": false
+    },
+    {
+      "id": "netheriteextras:netherite_horse_armor",
+      "required": false
+    },
+    {
+      "id": "reinfbarrel:netherite_barrel",
+      "required": false
+    },
+    {
+      "id": "reinfchest:netherite_chest",
+      "required": false
+    },
+    {
+      "id": "#advancednetherite:tier/armor",
+      "required": false
+    },
+    {
+      "id": "#advancednetherite:tier/tools",
+      "required": false
+    },
+    {
+      "id": "#reinfshulker:netherite_shulker_boxes",
+      "required": false
+    }
+  ]
+}

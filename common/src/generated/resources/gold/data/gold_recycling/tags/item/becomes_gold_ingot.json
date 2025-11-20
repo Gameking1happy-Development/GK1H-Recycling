@@ -1,0 +1,36 @@
+{
+  "values": [
+    "minecraft:clock",
+    "minecraft:totem_of_undying",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    {
+      "id": "spikyspikes:golden_spike",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:gold",
+      "required": false
+    },
+    {
+      "id": "travelersbackpack:gold_tier_upgrade",
+      "required": false
+    },
+    {
+      "id": "metalbundles:golden_bundle",
+      "required": false
+    },
+    {
+      "id": "reinfbarrel:gold_barrel",
+      "required": false
+    },
+    {
+      "id": "reinfchest:gold_chest",
+      "required": false
+    },
+    {
+      "id": "#reinfshulker:gold_shulker_boxes",
+      "required": false
+    }
+  ]
+}

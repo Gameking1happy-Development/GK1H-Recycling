@@ -20,6 +20,9 @@ subprojects {
             name = "GK1H Mod Resources"
             url = "https://raw.githubusercontent.com/Gameking1happy-Development/Mod-Resources/main/maven/"
         }
+        maven {
+            name = "oωo (owo-lib)"
+            url = "https://maven.wispforest.io/releases/" }
         exclusiveContent {
             forRepository {
                 maven {
