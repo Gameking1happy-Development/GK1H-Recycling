@@ -45,8 +45,6 @@ public class NetheriteItemTagsProvider extends ItemTagsProvider {
                 .addOptional(fNAP("netheriteextras","netherite_horse_armor"))
                 .addOptional(fNAP("reinfbarrel","netherite_barrel"))
                 .addOptional(fNAP("reinfchest","netherite_chest"))
-                .addOptionalTag(TagKey.create(Registries.ITEM, fNAP("advancednetherite","tier/armor")))
-                .addOptionalTag(TagKey.create(Registries.ITEM, fNAP("advancednetherite","tier/tools")))
-                .addOptionalTag(TagKey.create(Registries.ITEM, fNAP("reinfshulker","netherite_shulker_boxes")));
+                .addOptionalTags(TagKey.create(Registries.ITEM, fNAP("advancednetherite","tier/armor")), TagKey.create(Registries.ITEM, fNAP("advancednetherite","tier/tools")),TagKey.create(Registries.ITEM, fNAP("reinfshulker","netherite_shulker_boxes")));
     }
 }
