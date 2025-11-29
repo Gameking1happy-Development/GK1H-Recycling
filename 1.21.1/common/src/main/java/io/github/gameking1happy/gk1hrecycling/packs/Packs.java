@@ -5,6 +5,8 @@ import org.jetbrains.annotations.NotNull;
 
 import static io.github.gameking1happy.gk1hcore.packs.AddPackPreset.addCDP;
 import static io.github.gameking1happy.gk1hcore.platform.Services.PLATFORM;
+import static io.github.gameking1happy.gk1hcore.compat.CompatFlags.*;
+import static io.github.gameking1happy.gk1hrecipes.Main.Lodestone;
 import static io.github.gameking1happy.gk1hrecycling.Main.*;
 
 /**
@@ -21,6 +23,9 @@ public class Packs implements AddPacks {
         }
         if (PLATFORM.isModLoaded("mr_diamond_recycling")) {
             addCDP(modContainerOrEvent, getModID(), "diamond");
+            if(EncInf) {
+                addCDP(modContainerOrEvent, getModID(), "enchantinginfuser");
+            }
         }
         if (PLATFORM.isModLoaded("mr_better_goldrecycling")) {
             addCDP(modContainerOrEvent, getModID(), "gold");
@@ -30,9 +35,18 @@ public class Packs implements AddPacks {
         }
         if (PLATFORM.isModLoaded("mr_leather_recycling")) {
             addCDP(modContainerOrEvent, getModID(), "leather");
+            if(MetBun) {
+                addCDP(modContainerOrEvent, getModID(), "metalbundles");
+            }
         }
         if (PLATFORM.isModLoaded("mr_netherite_recycling")) {
             addCDP(modContainerOrEvent, getModID(), "netherite");
+            if(NetExt) {
+                addCDP(modContainerOrEvent, getModID(), "netheriteextras");
+            }
+            if(GK1HRecipes && Lodestone) {
+                addCDP(modContainerOrEvent, getModID(), "gk1hrecipes");
+            }
         }
     }
     /**

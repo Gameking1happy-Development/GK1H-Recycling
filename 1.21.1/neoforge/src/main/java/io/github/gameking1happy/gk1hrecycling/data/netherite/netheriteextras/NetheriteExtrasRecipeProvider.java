@@ -1,32 +1,30 @@
-package io.github.gameking1happy.gk1hrecycling.data.netherite;
+package io.github.gameking1happy.gk1hrecycling.data.netherite.netheriteextras;
 
-import xyz.hafemann.netheriteextras.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
+import xyz.hafemann.netheriteextras.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.fNaP;
 import static io.github.gameking1happy.gk1hrecycling.Main.MOD_ID;
 
 /**
- * Netherite Recycling Recipe datagen.
+ * Netherite Extras Recycling Recipe datagen.
  */
-public class NetheriteRecipeProvider extends RecipeProvider {
+public class NetheriteExtrasRecipeProvider extends RecipeProvider {
     /**
      * @param output Pack output.
      * @param lookupProvider Lookup provider.
      */
-    public NetheriteRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    public NetheriteExtrasRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
     @Override
     public @NotNull String getName() {
-        return super.getName() + "-Netherite";
+        return super.getName() + "-NetheriteExtras";
     }
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
@@ -36,7 +34,6 @@ public class NetheriteRecipeProvider extends RecipeProvider {
                 .group("netherite_nugget")
                 .define('a', ModItems.NETHERITE_APPLE)
                 .unlockedBy("has_netherite_apple", has(ModItems.NETHERITE_APPLE))
-                .save(output,fNAP(MOD_ID,"recycle_netherite_apple"));
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.LODESTONE),RecipeCategory.MISC,Items.IRON_NUGGET,5).unlockedBy("has_lodestone", has(Items.LODESTONE)).save(output,fNAP("netherite_recycling","recycle_lodestone_with_stonecutter"));
+                .save(output,fNaP(MOD_ID,"recycle_netherite_apple"));
     }
 }

@@ -1,11 +1,9 @@
 package io.github.gameking1happy.gk1hrecycling.data.copper;
 
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -14,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.concurrent.CompletableFuture;
 
 import static io.github.gameking1happy.gk1hrecycling.Main.MOD_ID;
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 
 /**
  * Copper Recycling item tags datagen.
@@ -35,12 +33,12 @@ public class CopperItemTagsProvider extends ItemTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.@NotNull Provider lookupProvider) {
-        tag(TagKey.create(Registries.ITEM, fNAP("copper_recycling","recyclable_copper")))
+        tag(ITKC("copper_recycling","recyclable_copper"))
                 .add(Items.BRUSH, Items.COPPER_BULB, Items.WAXED_COPPER_BULB)
-                .addOptional(fNAP("metalbundles","copper_bundle"))
-                .addOptional(fNAP("illagerinvasion","imbuing_table"))
-                .addOptional(fNAP("reinfchest","copper_chest"))
-                .addOptional(fNAP("reinfbarrel","copper_barrel"))
-                .addOptionalTag(TagKey.create(Registries.ITEM, fNAP("reinfshulker","copper_shulker_boxes")));
+                .addOptional(fNaP("metalbundles","copper_bundle"))
+                .addOptional(fNaP("illagerinvasion","imbuing_table"))
+                .addOptional(fNaP("reinfchest","copper_chest"))
+                .addOptional(fNaP("reinfbarrel","copper_barrel"))
+                .addOptionalTag(ITKC("reinfshulker","copper_shulker_boxes"));
     }
 }

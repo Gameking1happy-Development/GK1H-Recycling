@@ -35,7 +35,6 @@
     "fabric-api": ">=${fabric_version}",
     "minecraft": "${minecraft_version}",
     "java": ">=${java_version}",
-    "fzzy_config": ">=${fzzy_config_version}",
     "gk1hcore": ">=${gk1hcore_version}"
   },
   "recommends": {
@@ -55,20 +54,19 @@
       "update_checker": true
     },
     "mc-publish": {
-      "modrinth": "dsSEkdej",
-      "curseforge": 1385683,
+      "modrinth": "gk1h-recycling",
+      "curseforge": "1385683",
       "dependencies": [
         "fabricloader@>=${fabric_loader_version}#(ignore)",
         "minecraft@${minecraft_version}#(ignore)",
         "java@>=${java_version}#(ignore)",
-        "fzzy_config@>=${fzzy_config_version}(required){modrinth:hYykXjDp}{curseforge:1005914}",
-        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}{curseforge:1384685}",
-        "mr_copper_recycling@>=${copper_recycling_version}(recommended){modrinth:fuupShGh}#(ignore:curseforge)",
-        "mr_diamond_recycling@>=${diamond_recycling_version}(recommended){modrinth:jw67t8zN}#(ignore:curseforge)",
-        "mr_better_goldrecycling@>=${gold_recycling_version}(recommended){modrinth:1IZygUPY}#(ignore:curseforge)",
-        "mr_better_ironrecycling@>=${iron_recycling_version}(recommended){modrinth:ZzFVPwda}#(ignore:curseforge)",
-        "mr_leather_recycling@>=${leather_recycling_version}(recommended){modrinth:1PyD1P16}#(ignore:curseforge)",
-        "mr_netherite_recycling@>=${netherite_recycling_version}(recommended){modrinth:9nhO1kCg}#(ignore:curseforge)"
+        "gk1hcore@>=${gk1hcore_version}(required){modrinth:gk1h-core}{curseforge:1384685}",
+        "mr_copper_recycling@>=${copper_recycling_version}(recommended){modrinth:copper-recycling}#(ignore:curseforge)",
+        "mr_diamond_recycling@>=${diamond_recycling_version}(recommended){modrinth:diamond-recycling}#(ignore:curseforge)",
+        "mr_better_goldrecycling@>=${gold_recycling_version}(recommended){modrinth:better-gold-recycling}#(ignore:curseforge)",
+        "mr_better_ironrecycling@>=${iron_recycling_version}(recommended){modrinth:better-iron-recycling}#(ignore:curseforge)",
+        "mr_leather_recycling@>=${leather_recycling_version}(recommended){modrinth:leather-recycling}#(ignore:curseforge)",
+        "mr_netherite_recycling@>=${netherite_recycling_version}(recommended){modrinth:netherite-recycling}#(ignore:curseforge)"
       ]
     }
   }

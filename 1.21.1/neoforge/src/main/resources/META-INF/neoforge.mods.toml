@@ -40,18 +40,8 @@ ordering = "NONE"
 side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
-modrinth = "vjOWyxXu"
-curseforge = 1384685
-[[dependencies.${ mod_id }]]
-modId = "fzzy_config"
-type = "required"
-versionRange = "[${fzzy_config_version},)"
-ordering = "NONE"
-side = "BOTH"
-[dependencies.${ mod_id }.mc-publish]
-ignore = false
-modrinth = "hYykXjDp"
-curseforge = 1005914
+modrinth = "gk1h-core"
+curseforge = "1384685"
 [[dependencies.${ mod_id }]]
 modId = "mr_copper_recycling"
 type = "optional"
@@ -89,15 +79,15 @@ versionRange = "[${netherite_recycling_version},)"
 ordering = "AFTER"
 side = "BOTH"
 [mc-publish]
-modrinth = "dsSEkdej"
-curseforge = 1385683
+modrinth = "gk1h-recycling"
+curseforge = "1385683"
 dependencies=[
-    "mr_copper_recycling@>=${copper_recycling_version}(recommended){modrinth:fuupShGh}#(ignore:curseforge)",
-    "mr_diamond_recycling@>=${diamond_recycling_version}(recommended){modrinth:jw67t8zN}#(ignore:curseforge)",
-    "mr_better_goldrecycling@>=${gold_recycling_version}(recommended){modrinth:1IZygUPY}#(ignore:curseforge)",
-    "mr_better_ironrecycling@>=${iron_recycling_version}(recommended){modrinth:ZzFVPwda}#(ignore:curseforge)",
-    "mr_leather_recycling@>=${leather_recycling_version}(recommended){modrinth:1PyD1P16}#(ignore:curseforge)",
-    "mr_netherite_recycling@>=${netherite_recycling_version}(recommended){modrinth:9nhO1kCg}#(ignore:curseforge)"
+    "mr_copper_recycling@>=${copper_recycling_version}(recommended){modrinth:copper-recycling}#(ignore:curseforge)",
+    "mr_diamond_recycling@>=${diamond_recycling_version}(recommended){modrinth:diamond-recycling}#(ignore:curseforge)",
+    "mr_better_goldrecycling@>=${gold_recycling_version}(recommended){modrinth:better-gold-recycling}#(ignore:curseforge)",
+    "mr_better_ironrecycling@>=${iron_recycling_version}(recommended){modrinth:better-iron-recycling}#(ignore:curseforge)",
+    "mr_leather_recycling@>=${leather_recycling_version}(recommended){modrinth:leather-recycling}#(ignore:curseforge)",
+    "mr_netherite_recycling@>=${netherite_recycling_version}(recommended){modrinth:netherite-recycling}#(ignore:curseforge)"
     ]
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't

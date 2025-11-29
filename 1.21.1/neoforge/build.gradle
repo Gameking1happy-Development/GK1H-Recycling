@@ -57,6 +57,7 @@ neoForge {
 dependencies {
     api("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
     accessTransformers("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
+    api("io.github.gameking1happy.gk1hrecipes:gk1hrecipes-neoforge-1.21.1:${gk1hrecipes_version}")
     runtimeOnly("me.fzzyhmstrs:fzzy_config:${fzzy_config_version}+neoforge")
     runtimeOnly("maven.modrinth:copper-recycling:${copper_recycling_version}+mod")
     runtimeOnly("maven.modrinth:diamond-recycling:${diamond_recycling_version}+mod")

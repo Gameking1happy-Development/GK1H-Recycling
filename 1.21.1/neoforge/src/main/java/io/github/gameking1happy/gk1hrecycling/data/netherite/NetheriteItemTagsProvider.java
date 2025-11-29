@@ -1,17 +1,15 @@
 package io.github.gameking1happy.gk1hrecycling.data.netherite;
 
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 import static io.github.gameking1happy.gk1hrecycling.Main.MOD_ID;
 
 /**
@@ -33,18 +31,18 @@ public class NetheriteItemTagsProvider extends ItemTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.@NotNull Provider lookupProvider) {
-        tag(TagKey.create(Registries.ITEM, fNAP("netherite_recycling","recycles_to_netherite_scrap")))
-                .addOptional(fNAP("spikyspikes","netherite_spike"))
-                .addOptional(fNAP("travelersbackpack","netherite_tier_upgrade"))
-                .addOptional(fNAP("travelersbackpack","netherite"))
-                .addOptional(fNAP("metalbundles","netherite_bundle"))
-                .addOptional(fNAP("enchantinginfuser","advanced_enchanting_infuser"))
-                .addOptional(fNAP("netheriteextras","netherite_wolf_armor"))
-                .addOptional(fNAP("netheriteextras","totem_of_neverdying"))
-                .addOptional(fNAP("netheriteextras","enchanted_netherite_apple"))
-                .addOptional(fNAP("netheriteextras","netherite_horse_armor"))
-                .addOptional(fNAP("reinfbarrel","netherite_barrel"))
-                .addOptional(fNAP("reinfchest","netherite_chest"))
-                .addOptionalTags(TagKey.create(Registries.ITEM, fNAP("advancednetherite","tier/armor")), TagKey.create(Registries.ITEM, fNAP("advancednetherite","tier/tools")),TagKey.create(Registries.ITEM, fNAP("reinfshulker","netherite_shulker_boxes")));
+        tag(ITKC("netherite_recycling","recycles_to_netherite_scrap"))
+                .addOptional(fNaP("spikyspikes","netherite_spike"))
+                .addOptional(fNaP("travelersbackpack","netherite_tier_upgrade"))
+                .addOptional(fNaP("travelersbackpack","netherite"))
+                .addOptional(fNaP("metalbundles","netherite_bundle"))
+                .addOptional(fNaP("enchantinginfuser","advanced_enchanting_infuser"))
+                .addOptional(fNaP("netheriteextras","netherite_wolf_armor"))
+                .addOptional(fNaP("netheriteextras","totem_of_neverdying"))
+                .addOptional(fNaP("netheriteextras","enchanted_netherite_apple"))
+                .addOptional(fNaP("netheriteextras","netherite_horse_armor"))
+                .addOptional(fNaP("reinfbarrel","netherite_barrel"))
+                .addOptional(fNaP("reinfchest","netherite_chest"))
+                .addOptionalTags(ITKC("advancednetherite","tier/armor"), ITKC("advancednetherite","tier/tools"),ITKC("reinfshulker","netherite_shulker_boxes"));
     }
 }
