@@ -23,7 +23,7 @@ public class Packs implements AddPacks {
         }
         if (PLATFORM.isModLoaded("mr_diamond_recycling")) {
             addCdp(modContainerOrEvent, getModID(), "diamond");
-            if(encInf) {
+            if(ENC_INF) {
                 addCdp(modContainerOrEvent, getModID(), "enchantinginfuser");
             }
         }
@@ -35,16 +35,16 @@ public class Packs implements AddPacks {
         }
         if (PLATFORM.isModLoaded("mr_leather_recycling")) {
             addCdp(modContainerOrEvent, getModID(), "leather");
-            if(metBun) {
+            if(MET_BUN) {
                 addCdp(modContainerOrEvent, getModID(), "metalbundles");
             }
         }
         if (PLATFORM.isModLoaded("mr_netherite_recycling")) {
             addCdp(modContainerOrEvent, getModID(), "netherite");
-            if(netExt) {
+            if(NET_EXT) {
                 addCdp(modContainerOrEvent, getModID(), "netheriteextras");
             }
-            if(gk1hRecipes && lodestone) {
+            if(GK1H_RECIPES && lodestone) {
                 addCdp(modContainerOrEvent, getModID(), "gk1hrecipes");
             }
         }

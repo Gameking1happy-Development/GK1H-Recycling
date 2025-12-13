@@ -3,10 +3,11 @@
   "1.21.1": {
     "21.1.1.0": "Release.",
     "21.1.2.0": "Non-content changes.",
-    "21.1.2.1": "Renamed everything to convention."
+    "21.1.2.1": "Renamed everything to convention.",
+    "21.1.2.2": "Fixed constant names that incorrectly used camelCase instead of SCREAMING_SNAKE_CASE."
   },
   "promos": {
-    "1.21.1-latest": "21.1.2.1",
-    "1.21.1-recommended": "21.1.2.1"
+    "1.21.1-latest": "21.1.2.2",
+    "1.21.1-recommended": "21.1.2.2"
   }
 }
