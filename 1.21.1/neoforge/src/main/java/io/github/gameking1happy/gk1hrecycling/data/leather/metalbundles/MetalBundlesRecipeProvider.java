@@ -39,6 +39,6 @@ public class MetalBundlesRecipeProvider extends RecipeProvider {
                 .define('b', Ingredient.of(Items.BUNDLE, ModRegistry.LEATHER_BUNDLE_ITEM.value()))
                 .unlockedBy("has_bundle", has(Items.BUNDLE))
                 .unlockedBy("has_leather_bundle", has(ModRegistry.LEATHER_BUNDLE_ITEM.value()))
-                .save(output,fNaP("leather_recycling","leather_from_bundles"));
+                .save(output,fnap("leather_recycling","leather_from_bundles"));
     }
 }

@@ -38,6 +38,6 @@ public class EnchantingInfuserRecipeProvider extends RecipeProvider {
                 .define('t', Ingredient.of(Items.ENCHANTING_TABLE, ModRegistry.INFUSER_ITEM.value()))
                 .unlockedBy("has_enchanting_table", has(Items.ENCHANTING_TABLE))
                 .unlockedBy("has_enchanting_infuser", has(ModRegistry.INFUSER_ITEM.value()))
-                .save(output,fNaP("diamond_recycling","diamond_from_enchanting_tables"));
+                .save(output,fnap("diamond_recycling","diamond_from_enchanting_tables"));
     }
 }

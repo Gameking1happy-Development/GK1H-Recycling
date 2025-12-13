@@ -3,10 +3,10 @@ package io.github.gameking1happy.gk1hrecycling.packs;
 import io.github.gameking1happy.gk1hcore.packs.AddPacks;
 import org.jetbrains.annotations.NotNull;
 
-import static io.github.gameking1happy.gk1hcore.packs.AddPackPreset.addCDP;
+import static io.github.gameking1happy.gk1hcore.packs.AddPackPreset.addCdp;
 import static io.github.gameking1happy.gk1hcore.platform.Services.PLATFORM;
 import static io.github.gameking1happy.gk1hcore.compat.CompatFlags.*;
-import static io.github.gameking1happy.gk1hrecipes.Main.Lodestone;
+import static io.github.gameking1happy.gk1hrecipes.Main.lodestone;
 import static io.github.gameking1happy.gk1hrecycling.Main.*;
 
 /**
@@ -19,33 +19,33 @@ public class Packs implements AddPacks {
      */
     public void addPacks(@NotNull Object modContainerOrEvent) {
         if (PLATFORM.isModLoaded("mr_copper_recycling")) {
-            addCDP(modContainerOrEvent, getModID(), "copper");
+            addCdp(modContainerOrEvent, getModID(), "copper");
         }
         if (PLATFORM.isModLoaded("mr_diamond_recycling")) {
-            addCDP(modContainerOrEvent, getModID(), "diamond");
-            if(EncInf) {
-                addCDP(modContainerOrEvent, getModID(), "enchantinginfuser");
+            addCdp(modContainerOrEvent, getModID(), "diamond");
+            if(encInf) {
+                addCdp(modContainerOrEvent, getModID(), "enchantinginfuser");
             }
         }
         if (PLATFORM.isModLoaded("mr_better_goldrecycling")) {
-            addCDP(modContainerOrEvent, getModID(), "gold");
+            addCdp(modContainerOrEvent, getModID(), "gold");
         }
         if (PLATFORM.isModLoaded("mr_better_ironrecycling")) {
-            addCDP(modContainerOrEvent, getModID(), "iron");
+            addCdp(modContainerOrEvent, getModID(), "iron");
         }
         if (PLATFORM.isModLoaded("mr_leather_recycling")) {
-            addCDP(modContainerOrEvent, getModID(), "leather");
-            if(MetBun) {
-                addCDP(modContainerOrEvent, getModID(), "metalbundles");
+            addCdp(modContainerOrEvent, getModID(), "leather");
+            if(metBun) {
+                addCdp(modContainerOrEvent, getModID(), "metalbundles");
             }
         }
         if (PLATFORM.isModLoaded("mr_netherite_recycling")) {
-            addCDP(modContainerOrEvent, getModID(), "netherite");
-            if(NetExt) {
-                addCDP(modContainerOrEvent, getModID(), "netheriteextras");
+            addCdp(modContainerOrEvent, getModID(), "netherite");
+            if(netExt) {
+                addCdp(modContainerOrEvent, getModID(), "netheriteextras");
             }
-            if(GK1HRecipes && Lodestone) {
-                addCDP(modContainerOrEvent, getModID(), "gk1hrecipes");
+            if(gk1hRecipes && lodestone) {
+                addCdp(modContainerOrEvent, getModID(), "gk1hrecipes");
             }
         }
     }

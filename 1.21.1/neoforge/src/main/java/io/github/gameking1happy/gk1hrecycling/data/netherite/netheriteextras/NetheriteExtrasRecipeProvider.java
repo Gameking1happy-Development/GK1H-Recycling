@@ -8,7 +8,7 @@ import xyz.hafemann.netheriteextras.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.data.CoreData.fNaP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.fnap;
 import static io.github.gameking1happy.gk1hrecycling.Main.MOD_ID;
 
 /**
@@ -34,6 +34,6 @@ public class NetheriteExtrasRecipeProvider extends RecipeProvider {
                 .group("netherite_nugget")
                 .define('a', ModItems.NETHERITE_APPLE)
                 .unlockedBy("has_netherite_apple", has(ModItems.NETHERITE_APPLE))
-                .save(output,fNaP(MOD_ID,"recycle_netherite_apple"));
+                .save(output,fnap(MOD_ID,"recycle_netherite_apple"));
     }
 }

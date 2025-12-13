@@ -10,8 +10,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.data.CoreData.ITKC;
-import static io.github.gameking1happy.gk1hcore.data.CoreData.fNaP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.itkc;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.fnap;
 import static io.github.gameking1happy.gk1hrecycling.Main.MOD_ID;
 
 /**
@@ -33,11 +33,11 @@ public class LeatherItemTagsProvider extends ItemTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.@NotNull Provider lookupProvider) {
-        tag(ITKC("leather_recycling","recycles_to_leather"))
+        tag(itkc("leather_recycling","recycles_to_leather"))
                 .remove(Items.SADDLE)
-                .addOptional(fNaP("bagofholding","leather_bag_of_holding"));
-        tag(ITKC("leather_recycling","recycles_to_rabbit_hide"))
-                .addOptional(fNaP("hangglider","glider_wing"))
-                .addOptional(fNaP("travelersbackpack","blank_upgrade"));
+                .addOptional(fnap("bagofholding","leather_bag_of_holding"));
+        tag(itkc("leather_recycling","recycles_to_rabbit_hide"))
+                .addOptional(fnap("hangglider","glider_wing"))
+                .addOptional(fnap("travelersbackpack","blank_upgrade"));
     }
 }

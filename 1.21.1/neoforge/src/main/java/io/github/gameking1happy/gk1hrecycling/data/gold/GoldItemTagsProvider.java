@@ -32,29 +32,29 @@ public class GoldItemTagsProvider extends ItemTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.@NotNull Provider lookupProvider) {
-        tag(ITKC("gold_recycling","becomes_gold_nugget"))
+        tag(itkc("gold_recycling","becomes_gold_nugget"))
                 .add(Items.GOLDEN_CARROT)
                 .remove(Items.CLOCK)
-                .addOptional(fNaP("illagerinvasion","horn_of_sight"))
-                .addOptional(fNaP("waystones","blank_scroll"))
-                .addOptional(fNaP("waystones","warp_scroll"))
-                .addOptional(fNaP("waystones","bound_scroll"))
-                .addOptional(fNaP("waystones","return_scroll"))
-                .addOptional(fNaP("moblassos","golden_lasso"))
-                .addOptional(fNaP("horseexpert","monocle"))
-                .addOptional(fNaP("arcanelanterns","feral_lantern"))
-                .addOptional(fNaP("barteringstation","bartering_station"))
-                .addOptional(fNaP("bagofholding","golden_bag_of_holding"))
-                .addOptional(fNaP("magnumtorch","emerald_magnum_torch"))
-                .addOptional(fNaP("magnumtorch","amethyst_magnum_torch"));
-        tag(ITKC("gold_recycling","becomes_gold_ingot"))
+                .addOptional(fnap("illagerinvasion","horn_of_sight"))
+                .addOptional(fnap("waystones","blank_scroll"))
+                .addOptional(fnap("waystones","warp_scroll"))
+                .addOptional(fnap("waystones","bound_scroll"))
+                .addOptional(fnap("waystones","return_scroll"))
+                .addOptional(fnap("moblassos","golden_lasso"))
+                .addOptional(fnap("horseexpert","monocle"))
+                .addOptional(fnap("arcanelanterns","feral_lantern"))
+                .addOptional(fnap("barteringstation","bartering_station"))
+                .addOptional(fnap("bagofholding","golden_bag_of_holding"))
+                .addOptional(fnap("magnumtorch","emerald_magnum_torch"))
+                .addOptional(fnap("magnumtorch","amethyst_magnum_torch"));
+        tag(itkc("gold_recycling","becomes_gold_ingot"))
                 .add(Items.CLOCK,Items.TOTEM_OF_UNDYING,Items.GOLDEN_APPLE,Items.ENCHANTED_GOLDEN_APPLE)
-                .addOptional(fNaP("spikyspikes","golden_spike"))
-                .addOptional(fNaP("travelersbackpack","gold"))
-                .addOptional(fNaP("travelersbackpack","gold_tier_upgrade"))
-                .addOptional(fNaP("metalbundles","golden_bundle"))
-                .addOptional(fNaP("reinfbarrel","gold_barrel"))
-                .addOptional(fNaP("reinfchest","gold_chest"))
-                .addOptionalTag(ITKC("reinfshulker","gold_shulker_boxes"));
+                .addOptional(fnap("spikyspikes","golden_spike"))
+                .addOptional(fnap("travelersbackpack","gold"))
+                .addOptional(fnap("travelersbackpack","gold_tier_upgrade"))
+                .addOptional(fnap("metalbundles","golden_bundle"))
+                .addOptional(fnap("reinfbarrel","gold_barrel"))
+                .addOptional(fnap("reinfchest","gold_chest"))
+                .addOptionalTag(itkc("reinfshulker","gold_shulker_boxes"));
     }
 }

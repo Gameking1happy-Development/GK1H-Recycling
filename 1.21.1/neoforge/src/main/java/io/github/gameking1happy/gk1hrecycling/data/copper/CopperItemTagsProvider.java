@@ -33,12 +33,12 @@ public class CopperItemTagsProvider extends ItemTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.@NotNull Provider lookupProvider) {
-        tag(ITKC("copper_recycling","recyclable_copper"))
+        tag(itkc("copper_recycling","recyclable_copper"))
                 .add(Items.BRUSH, Items.COPPER_BULB, Items.WAXED_COPPER_BULB)
-                .addOptional(fNaP("metalbundles","copper_bundle"))
-                .addOptional(fNaP("illagerinvasion","imbuing_table"))
-                .addOptional(fNaP("reinfchest","copper_chest"))
-                .addOptional(fNaP("reinfbarrel","copper_barrel"))
-                .addOptionalTag(ITKC("reinfshulker","copper_shulker_boxes"));
+                .addOptional(fnap("metalbundles","copper_bundle"))
+                .addOptional(fnap("illagerinvasion","imbuing_table"))
+                .addOptional(fnap("reinfchest","copper_chest"))
+                .addOptional(fnap("reinfbarrel","copper_barrel"))
+                .addOptionalTag(itkc("reinfshulker","copper_shulker_boxes"));
     }
 }

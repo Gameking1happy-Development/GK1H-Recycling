@@ -28,6 +28,6 @@ public class GK1HRecipesRecipeProvider extends RecipeProvider {
     }
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.LODESTONE),RecipeCategory.MISC,Items.IRON_NUGGET,5).unlockedBy("has_lodestone", has(Items.LODESTONE)).save(output,fNaP("netherite_recycling","recycle_lodestone_with_stonecutter"));
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.LODESTONE),RecipeCategory.MISC,Items.IRON_NUGGET,5).unlockedBy("has_lodestone", has(Items.LODESTONE)).save(output,fnap("netherite_recycling","recycle_lodestone_with_stonecutter"));
     }
 }

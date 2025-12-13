@@ -31,18 +31,18 @@ public class NetheriteItemTagsProvider extends ItemTagsProvider {
     }
     @Override
     protected void addTags(HolderLookup.@NotNull Provider lookupProvider) {
-        tag(ITKC("netherite_recycling","recycles_to_netherite_scrap"))
-                .addOptional(fNaP("spikyspikes","netherite_spike"))
-                .addOptional(fNaP("travelersbackpack","netherite_tier_upgrade"))
-                .addOptional(fNaP("travelersbackpack","netherite"))
-                .addOptional(fNaP("metalbundles","netherite_bundle"))
-                .addOptional(fNaP("enchantinginfuser","advanced_enchanting_infuser"))
-                .addOptional(fNaP("netheriteextras","netherite_wolf_armor"))
-                .addOptional(fNaP("netheriteextras","totem_of_neverdying"))
-                .addOptional(fNaP("netheriteextras","enchanted_netherite_apple"))
-                .addOptional(fNaP("netheriteextras","netherite_horse_armor"))
-                .addOptional(fNaP("reinfbarrel","netherite_barrel"))
-                .addOptional(fNaP("reinfchest","netherite_chest"))
-                .addOptionalTags(ITKC("advancednetherite","tier/armor"), ITKC("advancednetherite","tier/tools"),ITKC("reinfshulker","netherite_shulker_boxes"));
+        tag(itkc("netherite_recycling","recycles_to_netherite_scrap"))
+                .addOptional(fnap("spikyspikes","netherite_spike"))
+                .addOptional(fnap("travelersbackpack","netherite_tier_upgrade"))
+                .addOptional(fnap("travelersbackpack","netherite"))
+                .addOptional(fnap("metalbundles","netherite_bundle"))
+                .addOptional(fnap("enchantinginfuser","advanced_enchanting_infuser"))
+                .addOptional(fnap("netheriteextras","netherite_wolf_armor"))
+                .addOptional(fnap("netheriteextras","totem_of_neverdying"))
+                .addOptional(fnap("netheriteextras","enchanted_netherite_apple"))
+                .addOptional(fnap("netheriteextras","netherite_horse_armor"))
+                .addOptional(fnap("reinfbarrel","netherite_barrel"))
+                .addOptional(fnap("reinfchest","netherite_chest"))
+                .addOptionalTags(itkc("advancednetherite","tier/armor"), itkc("advancednetherite","tier/tools"),itkc("reinfshulker","netherite_shulker_boxes"));
     }
 }
